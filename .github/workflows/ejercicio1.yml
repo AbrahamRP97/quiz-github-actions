@@ -1,0 +1,19 @@
+name: Ejercicio 1
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Imprimir saludo personalizado
+        run: echo "Hola, mi nombre es Abraham Rivera"
+
+      - name: Imprimir fecha y hora actual
+        run: date
+
+      - name: Imprimir sistema operativo
+        run: echo "Sistema operativo: $RUNNER_OS"
